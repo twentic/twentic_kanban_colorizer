@@ -24,6 +24,7 @@
             "project_kanban_pro/static/src/scss/*.scss",
         ],
     },
+    'images': ['static/description/main_screenshot.png'],
     "installable": True,
     "application": False,
     "auto_install": False,
