@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 18.0+e-20251208\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 00:00+0000\n"
-"PO-Revision-Date: 2026-03-24 00:00+0000\n"
+"POT-Creation-Date: 2026-05-08 11:51+0000\n"
+"PO-Revision-Date: 2026-05-08 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ca_ES\n"
@@ -15,113 +15,392 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Codex\n"
 
 #. module: project_kanban_pro
-#. odoo-javascript
-msgid "Blocked"
-msgstr "Bloquejada"
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
+msgid ""
+"<i class=\"fa fa-ban me-1\"/>\n"
+"                        Blocked"
+msgstr ""
+"<i class=\"fa fa-ban me-1\"/>\n"
+"                        Bloquejada"
 
 #. module: project_kanban_pro
-#. odoo-javascript
-msgid "Overdue"
-msgstr "Vençuda"
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__active
+msgid "Active"
+msgstr "Actiu"
 
 #. module: project_kanban_pro
-#. odoo-javascript
-msgid "At Risk"
-msgstr "En risc"
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
+msgid "Activity:"
+msgstr "Activitat:"
 
 #. module: project_kanban_pro
-#. odoo-javascript
-msgid "On Track"
-msgstr "En curs"
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__aging_days
+msgid "Aging Days"
+msgstr "Dies d'antiguitat"
 
 #. module: project_kanban_pro
-msgid "Highest"
-msgstr "Molt alta"
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.res_config_settings_view_form_project_kanban_pro
+msgid "Aging alert threshold"
+msgstr "Llindar d'alerta d'antiguitat"
 
 #. module: project_kanban_pro
-msgid "High"
-msgstr "Alta"
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
+msgid "Aging:"
+msgstr "Antiguitat:"
 
 #. module: project_kanban_pro
-msgid "Medium"
-msgstr "Mitjana"
-
-#. module: project_kanban_pro
-msgid "Low"
-msgstr "Baixa"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "My Tasks"
-msgstr "Les meves tasques"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "No Recent Activity"
-msgstr "Sense activitat recent"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "Priority Level"
-msgstr "Nivell de prioritat"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "Aging"
-msgstr "Antiguitat"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "Activity"
-msgstr "Activitat"
-
-#. module: project_kanban_pro
-#. odoo-javascript
-msgid "Stale"
-msgstr "Inactiva"
-
-#. module: project_kanban_pro
-#. odoo-javascript
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
 msgid "Assign Me"
 msgstr "Assigna'm"
 
 #. module: project_kanban_pro
 #. odoo-javascript
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_quick_filters.js:0
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__kanban_rule__color__at_risk
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__kanban_state_color__at_risk
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_search
+msgid "At Risk"
+msgstr "En risc"
+
+#. module: project_kanban_pro
+#. odoo-javascript
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_quick_filters.js:0
+#: code:addons/project_kanban_pro/static/src/js/project_task_state_selection_patch.js:0
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__kanban_rule__color__blocked
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__kanban_state_color__blocked
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__state__05_blocked
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_search
+msgid "Blocked"
+msgstr "Bloquejada"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__blocked_reason
+msgid "Blocked Reason"
+msgstr "Motiu de bloqueig"
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "Blocked from Kanban"
+msgstr "Bloquejada des del kanban"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__color
+msgid "Color"
+msgstr "Color"
+
+#. module: project_kanban_pro
+#: model:ir.model,name:project_kanban_pro.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustos de configuració"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
+msgid "Cycle Priority"
+msgstr "Canvia prioritat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__display_name
+msgid "Display Name"
+msgstr "Nom visible"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__domain
+msgid "Domain"
+msgstr "Domini"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__priority_level__high
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__workload_state__high
+msgid "High"
+msgstr "Alta"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__priority_level__highest
+msgid "Highest"
+msgstr "Molt alta"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/kanban_rule.py:0
+msgid "Invalid domain on kanban rule '%s'."
+msgstr "Domini invàlid a la regla de kanban '%s'."
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__is_aging_alert
+msgid "Is Aging Alert"
+msgstr "Alerta d'antiguitat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__is_at_risk
+msgid "Is At Risk"
+msgstr "En risc"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__is_blocked
+msgid "Is Blocked"
+msgstr "Bloquejada"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__is_overdue
+msgid "Is Overdue"
+msgstr "Vençuda"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__is_stale
+msgid "Is Stale"
+msgstr "Inactiva"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_res_config_settings__project_kanban_pro_aging_days
+msgid "Kanban Aging Alert Days"
+msgstr "Dies per alerta d'antiguitat"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.res_config_settings_view_form_project_kanban_pro
+msgid "Kanban Pro"
+msgstr "Kanban Pro"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_res_config_settings__project_kanban_pro_risk_deadline_days
+msgid "Kanban Risk Deadline Days"
+msgstr "Dies de marge per risc de data límit"
+
+#. module: project_kanban_pro
+#: model:ir.model,name:project_kanban_pro.model_kanban_rule
+msgid "Kanban Rule"
+msgstr "Regla de kanban"
+
+#. module: project_kanban_pro
+#: model:ir.actions.act_window,name:project_kanban_pro.action_kanban_rule
+#: model:ir.ui.menu,name:project_kanban_pro.menu_project_kanban_rule
+msgid "Kanban Rules"
+msgstr "Regles de kanban"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_res_config_settings__project_kanban_pro_stale_days
+msgid "Kanban Stale Days"
+msgstr "Dies per marcar inactivitat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__kanban_state_color
+msgid "Kanban State Color"
+msgstr "Color d'estat kanban"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__kanban_state_label
+msgid "Kanban State Label"
+msgstr "Etiqueta d'estat kanban"
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/kanban_rule.py:0
+msgid "Kanban rule domains must evaluate to a list or tuple."
+msgstr "Els dominis de les regles de kanban s'han d'avaluar com a llista o tupla."
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__label
+msgid "Label"
+msgstr "Etiqueta"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__last_activity_date
+msgid "Last Activity Date"
+msgstr "Última activitat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__last_stage_change_date
+msgid "Last Stage Change Date"
+msgstr "Data de canvi d'etapa"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__write_uid
+msgid "Last Updated by"
+msgstr "Darrera actualització per"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__write_date
+msgid "Last Updated on"
+msgstr "Darrera actualització el"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__priority_level__low
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__workload_state__low
+msgid "Low"
+msgstr "Baixa"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__priority_level__medium
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__workload_state__medium
+msgid "Medium"
+msgstr "Mitjana"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__model_id
+msgid "Model"
+msgstr "Model"
+
+#. module: project_kanban_pro
+#. odoo-javascript
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_quick_filters.js:0
+msgid "My Tasks"
+msgstr "Les meves tasques"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
 msgid "Next Stage"
 msgstr "Etapa següent"
 
 #. module: project_kanban_pro
 #. odoo-javascript
-msgid "Cycle Priority"
-msgstr "Canvia prioritat"
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_quick_filters.js:0
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_search
+msgid "No Recent Activity"
+msgstr "Sense activitat recent"
 
 #. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__kanban_rule__color__on_track
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__kanban_state_color__on_track
+msgid "On Track"
+msgstr "En curs"
+
+#. module: project_kanban_pro
+#. odoo-javascript
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_quick_filters.js:0
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__kanban_rule__color__overdue
+#: model:ir.model.fields.selection,name:project_kanban_pro.selection__project_task__kanban_state_color__overdue
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_search
+msgid "Overdue"
+msgstr "Vençuda"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_kanban_rule__priority
+msgid "Priority"
+msgstr "Prioritat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__priority_level
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_search
+msgid "Priority Level"
+msgstr "Nivell de prioritat"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.res_config_settings_view_form_project_kanban_pro
+msgid "Risk deadline threshold"
+msgstr "Llindar de risc per data límit"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_kanban
+msgid "Stale"
+msgstr "Inactiva"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__stale_days
+msgid "Stale Days"
+msgstr "Dies d'inactivitat"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.res_config_settings_view_form_project_kanban_pro
+msgid "Stale activity threshold"
+msgstr "Llindar d'inactivitat"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__state
+msgid "State"
+msgstr "Estat"
+
+#. module: project_kanban_pro
+#: model:ir.model,name:project_kanban_pro.model_project_task
+msgid "Task"
+msgstr "Tasca"
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "Unsupported search for at risk filter."
+msgstr "Cerca no compatible amb el filtre en risc."
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "Unsupported search for blocked filter."
+msgstr "Cerca no compatible amb el filtre de bloquejades."
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "Unsupported search for overdue filter."
+msgstr "Cerca no compatible amb el filtre de vençudes."
+
+#. module: project_kanban_pro
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "Unsupported search for stale filter."
+msgstr "Cerca no compatible amb el filtre d'inactivitat."
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__user_task_count
+msgid "User Task Count"
+msgstr "Tasques de l'usuari"
+
+#. module: project_kanban_pro
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__user_workload_data
+msgid "User Workload Data"
+msgstr "Dades de càrrega de treball"
+
+#. module: project_kanban_pro
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.project_task_kanban_pro_form
 msgid "Why is this task blocked?"
 msgstr "Per què està bloquejada aquesta tasca?"
 
 #. module: project_kanban_pro
-msgid "Blocked from Kanban"
-msgstr "Bloquejada des del kanban"
+#: model:ir.model.fields,field_description:project_kanban_pro.field_project_task__workload_state
+msgid "Workload State"
+msgstr "Nivell de càrrega"
 
 #. module: project_kanban_pro
-msgid "Kanban Rules"
-msgstr "Regles de kanban"
+#: model_terms:ir.ui.view,arch_db:project_kanban_pro.view_kanban_rule_form
+msgid "[('date_deadline', '<', fields.Datetime.now())]"
+msgstr "[('date_deadline', '<', fields.Datetime.now())]"
 
 #. module: project_kanban_pro
-msgid "Kanban Pro"
-msgstr "Kanban Pro"
+#. odoo-python
+#: code:addons/project_kanban_pro/models/project_task.py:0
+msgid "label"
+msgstr "label"
 
 #. module: project_kanban_pro
-msgid "Kanban Aging Alert Days"
-msgstr "Dies per alerta d'antiguitat"
-
-#. module: project_kanban_pro
-msgid "Kanban Stale Days"
-msgstr "Dies per marcar inactivitat"
-
-#. module: project_kanban_pro
-msgid "Kanban Risk Deadline Days"
-msgstr "Dies de marge per risc de data límit"
+#. odoo-javascript
+#: code:addons/project_kanban_pro/static/src/js/project_task_kanban_pro_search_model.js:0
+msgid "Assignee"
+msgstr "Responsable"
